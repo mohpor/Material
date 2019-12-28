@@ -129,9 +129,9 @@ open class NavigationBar: UINavigationBar, Themeable {
     //iterate through the subviews to set `layoutMargins` to zero
     for v in subviews {
       if #available(iOS 13.0, *) {
-        let margins = v.layoutMargins
-        v.frame.origin.x = -margins.left
-        v.frame.size.width += margins.left + margins.right
+//        let margins = v.layoutMargins
+//        v.frame.origin.x = -margins.left
+//        v.frame.size.width += margins.left + margins.right
       } else {
         v.layoutMargins = .zero
       }
